@@ -9,7 +9,7 @@ from datetime import datetime
 st.set_page_config(page_title="LULU UAE — Sales Dashboard", layout="wide")
 
 @st.cache_data
-def load_data(path="data/lulu_transactions_sample.csv"):
+def load_data(path="lulu_transactions_sample.csv"):
     df = pd.read_csv(path, parse_dates=["date"])
     return df
 
